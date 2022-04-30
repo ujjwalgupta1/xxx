@@ -1,0 +1,42 @@
+<html>
+<head><title> Welcome</title>
+<body bgcolor=pink>
+<h1 id="myh1"> Choose Radio for color change</h1> 
+<br>
+<br>
+<form name="myform">
+<p>
+<input type="radio" name="myradio" value="radio" onClick="changeColour('b')">Blue
+<br>
+<input type="radio" name="myradio" value="radio" onClick="changeColour('r')">Red
+<br>
+<input type="radio" name="myradio" value="radio" onClick="changeColour('y')">Pop3</h1>
+</form>
+
+<script>
+alert("hello");
+
+function changeColour(value)
+{
+        switch(value)
+    {
+        case 'b':
+            document.body.style.backgroundColor= 'blue';
+x=document.body.style.backgroundColor;
+alert(x);
+        break;
+	case 'y':
+            document.body.style.backgroundColor= 'green';
+x=document.body.style.backgroundColor;
+alert(x);
+        break;
+	case 'r':
+            document.body.style.backgroundColor= 'red';
+x=document.body.style.backgroundColor;
+alert(x);
+        break;
+         }
+}
+</script>
+</body>
+</html>

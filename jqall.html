@@ -1,0 +1,30 @@
+<html>
+<head> <title>Welcome to Jquery </title>
+<style>
+.red{font-color:green;border-color:blue;border-width:6}
+</style>
+</head>
+<body bgcolor="white">
+<marquee><h1 id="myh">Welcome to poornima university</h1></marquee>
+<marquee><h1 id="myh1">Welcome to poornima university</h1></marquee>
+<marquee id="mq"> Welcome to school of Computer Engineering</marquee>
+<h2> Interactive web design </h2>
+<p id="p1" style="background-color:green;font-size:50"> 
+Poornima University, established in 2012, is a private university in Jaipur, Rajasthan. The university was established by Rajasthan State Legislature vide Act No. 16/2012 and is recognized under section 22 of University Grants Commission Act, 1956
+</p>
+<button id="btn2"> Click to hid p</button>
+<center><img id="logo" src="logo.jpg" height=500 width=500><center>
+<script src="Jq.js"></script>
+<script>
+$(document).ready(function(){
+$("#mq").slideToggle(1000).show(200).fadeToggle(5000).show(400).css({color:'red','font-weight':'bold',opacity:'.5','font-size':'50'});
+$('h1').hide(300).show(300).fadeToggle(1000).slideUp(5000).slideDown(1000).slideToggle(1000).show(200).fadeToggle(5000).show(400).css({color:'blue','font-weight':'bold',opacity:'.5'});
+$("#logo").hide(500).show(5000).fadeToggle(500).show(400).fadeIn(200).fadeOut(5000);
+$("#btn2").click(function(){
+$("#p1").fadeToggle(5000).show(200);
+$("#logo").fadeToggle(5000).show(200);
+})
+})
+ </script>
+</body>
+</html>

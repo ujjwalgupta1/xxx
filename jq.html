@@ -1,0 +1,18 @@
+<html>
+<head> <title>Welcome to Jquery </title>
+</head>
+<body bgcolor="black">
+<marquee><h1 id="myh">Welcome to poornima university</h1></marquee>
+<marquee id="mq"> Welcome to school of Computer Engineering</marquee>
+<center><img id="logo" src="logo.jpg" height=500 width=500><center>
+<script src="Jq.js"></script>
+<script>
+$(document).ready(function(){
+$("#mq").slideToggle(1000).show(200).fadeToggle(5000).show(400).css({color:'red','font-weight':'bold',opacity:'.5','font-size':'50'});
+$("#myh").hide(300).show(300).fadeToggle(1000).slideUp(5000).slideDown(1000).slideToggle(1000).show(200).fadeToggle(5000).show(400).css({color:'yellow','font-weight':'bold',opacity:'.5'});
+$("#logo").hide(500).show(5000).fadeToggle(500).show(400).fadeIn(200);
+
+})
+ </script>
+</body>
+</html>

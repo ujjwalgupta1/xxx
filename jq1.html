@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>welcome to Jquery</title>
+</head>
+<body>
+<script src="Jq.js"></script>
+<script>
+document.write("Hello");
+$(document).ready(function(){
+$("#myh1").slideToggle(1000).show(200).fadeToggle(5000).show(400);
+$("#btn").on('click',function(){
+$("#myh1").slideUp(1000).slideDown(100).fadeToggle(5000);
+});
+});
+</script>
+<h1 id="myh1">Welcome to interactive Web Design</h1>
+<button id="btn">Play Animation</button>
+</body>
+</html>

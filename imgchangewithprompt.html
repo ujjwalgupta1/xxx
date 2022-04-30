@@ -1,0 +1,14 @@
+<html>
+<head> <title>Image change </title>
+</head>
+<body>
+<img src="1.jpg" id="myimg">
+<script>
+function changeimg(x){
+x=prompt("Enter image number from 1-10");
+document.getElementById("myimg").src=x+".jpg";
+}
+</script>
+<button onclick="changeimg()">Press to change image </button>
+</body>
+</html>

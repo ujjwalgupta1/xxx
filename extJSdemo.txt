@@ -1,0 +1,11 @@
+<html>
+<head>
+<title> Welcome to Java Script</title>
+</head>
+<body>
+<h1 id="demo">welcome</h1>
+<h2 id="d1"> My name is vishnu</h2>
+<script src="extjs.js"> </script>
+<button onclick="changetext()">Changetext</button>
+</body>
+</html>

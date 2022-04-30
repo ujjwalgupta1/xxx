@@ -1,0 +1,26 @@
+<html>
+<head>
+<title> Welcome</title>
+</head>
+<body>
+<input type="text" id="t1">
+<button onclick="myfunc()"> Validation</button>
+<script>
+function myfunc(){
+
+x=document.getElementById("t1").value;
+document.write(x);
+try{
+if(x<10) throw "less than 10";
+if(x>10) throw "greater than 10";
+if(isNaN(x)) throw "not a number";
+}
+catch(err)
+{
+document.write("value is"+err);
+}
+}
+
+</script>
+</body>
+</html>

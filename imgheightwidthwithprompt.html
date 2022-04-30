@@ -1,0 +1,16 @@
+<html>
+<head> <title>Image change </title>
+</head>
+<body>
+<img src="1.jpg" id="myimg">
+<script>
+function resizeimg(x,y){
+x=prompt("Enter image height");
+y=prompt("Enter image width");
+document.getElementById("myimg").height=x;
+document.getElementById("myimg").width=y;
+}
+</script>
+<button onclick="resizeimg()">Press to change image </button>
+</body>
+</html>

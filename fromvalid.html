@@ -1,0 +1,36 @@
+<html>
+<head>
+<title> Form Validation</title>
+<script>
+function validate(){
+if(document.reg.fn.value==""){
+alert("input name");
+document.reg.fn.focus();
+return false;
+}}
+
+</script>
+</head>
+<body>
+<form name="reg">
+<div style="display:block" align=center>
+<h1> Registration form</h1> 
+Name :<input type="text" name=fn> <br> <br>
+Email:<input type="email" name=email required><br> <br>
+Mobile No:<input type="number" maxwidth=10 min=5 name=fn required><br> <br>
+user Name: <input type="text" name="un" required> <br> <br> 
+Password :<input type="password" name=psw><br> <br>
+Retype Password :<input type="password" name=rpsw> <br> <br> 
+Gender : Male <input type="radio" name="gender"> Female <input type="radio" name="gender"><br> <br>
+ <select name = "Country">
+                     <option value = "-1" selected></option>
+                     <option value = "1">USA</option>
+                     <option value = "2">UK</option>
+                     <option value = "3">INDIA</option>
+                  </select>
+<input type="submit" onclick="return (validate())" >  
+</div>
+</form>
+
+</body>
+</html>

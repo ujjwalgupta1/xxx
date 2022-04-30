@@ -1,0 +1,25 @@
+<html>
+<body>
+
+<h2>JSON string to object</h2>
+
+<p id="pu"></p>
+
+<script>
+let myuser = '{"users":[' +
+'{"Name":"Ajay","lastName":"Sharma" },' +
+'{"Name":"Vimal","lastName":"Khanna" },' +
+'{"Name":"Ajit","lastName":"Singh" }]}';
+
+const myobj = JSON.parse(myuser);
+for(i=0;i<3;i++)
+{
+document.getElementById("pu").innerHTML =
+myobj.users[i].Name + " " + myobj.users[i].lastName;
+document.write(myobj.users[i].Name + " " + myobj.users[i].lastName+"<br>");
+
+}
+</script>
+
+</body>
+</html>
